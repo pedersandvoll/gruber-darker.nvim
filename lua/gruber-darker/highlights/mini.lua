@@ -12,8 +12,8 @@ function M.setup()
     end
 end
 
-M.highlights["MiniPickBorder"] = Highlight.new("MiniPickBorder", { bg = c.none })
-M.highlights["MiniPickNormal"] = Highlight.new("MiniPickNormal", { bg = c.none })
-M.highlights["MiniPickPreviewLine"] = Highlight.new("MiniPickPreviewLine", { bg = c.none })
+M.highlights["mini-pick-border"] = Highlight.new("MiniPickBorder", { fg = c["bg+4"], bg = c.none })
+M.highlights["mini-pick-normal"] = Highlight.new("MiniPickNormal", { fg = c.fg, bg = c.bg })
+M.highlights["mini-pick-preview-line"] = Highlight.new("MiniPickPreviewLine", { fg = c.fg, bg = c["bg+1"] })
 
 return M
